@@ -1,1 +1,0 @@
-DCinside Slack notifier
