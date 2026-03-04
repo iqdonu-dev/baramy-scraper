@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '*/15 * * * *'
 workflow_dispatch:
+
 jobs:
   scrape-and-notify:
     runs-on: ubuntu-latest
