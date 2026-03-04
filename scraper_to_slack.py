@@ -11,7 +11,7 @@ SLACK_WEBHOOK_URL = os.getenv('SLACK_WEBHOOK_URL')
 # 스크레이핑할 DCinside 갤러리 주소
 TARGET_URL = 'https://gall.dcinside.com/mgallery/board/lists?id=aion2'
 # 몇 분 이내의 새 글을 확인할지 설정 (GitHub Actions 실행 주기와 맞추는 것이 좋음)
-CHECK_MINUTES = 1
+CHECK_MINUTES = 5
 
 def send_to_slack(post):
     """게시물 정보를 Slack으로 전송하는 함수"""
