@@ -3,8 +3,7 @@ name: DCinside to Slack Notifier
 on:
   workflow_dispatch:
   schedule:
-    # 10분마다 스크립트를 실행합니다.
-    - cron: '*/10 * * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   scrape-and-notify:
