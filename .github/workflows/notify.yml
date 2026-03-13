@@ -9,12 +9,13 @@ on:
 jobs:
   scrape-and-notify:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.9'
 
@@ -25,6 +26,5 @@ jobs:
 
       - name: Run Scraper and Notifier
         env:
-          # GitHub Secrets에 저장된 웹훅 URL을 환경 변수로 전달
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python scraper_to_slack.py
