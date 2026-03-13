@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 # GitHub Secrets에서 Slack 웹훅 URL을 가져옴
 SLACK_WEBHOOK_URL = os.getenv('SLACK_WEBHOOK_URL')
 # 스크레이핑할 DCinside 갤러리 주소
-TARGET_URL = 'https://gall.dcinside.com/mgallery/board/lists?id=aion2'
+TARGET_URL = 'https://wp.nexon.com/community/server?boardId=3056&headlineId'
 # 몇 분 이내의 새 글을 확인할지 설정 (GitHub Actions 실행 주기와 맞추는 것이 좋음)
 CHECK_MINUTES = 10 
 
